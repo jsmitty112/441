@@ -1,18 +1,12 @@
 <html>
     <head>
         <title>Accessing the DOM</title>
-        <script>
-            function doSomething()
-            {
-                window.alert("HI");
-            }
-        </script>
-
     </head>
     <body>
-        <div id="changeme">I love functions</div>
+        <div id="changeme">Update me</div>
+
         <script>
-          doSomthing();
-        </script>
+        document.getElementById("changeme").innerHTML = "I have been changed";
+    </script>
     </body>
 </html>
