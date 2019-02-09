@@ -1,0 +1,34 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="jordan web tech">
+      <meta name="author" content="Jordan Smith">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Epic Adventure</title>
+
+    </head>
+  <body>
+
+      <script>
+      <h1><center>Time for a Quest</center></h1>
+      <h3><center>You are forced to save a Princess from a mad wizard in a castle. The only way to get to her is by unlocking doors. To get through each door you must have the correct answer to the wizards questions/riddles. Be ready to solve his riddles to save the Princess.</center></h3>
+
+      function meet()
+      {
+      var name = window.prompt("Whats your name savior?");
+      console.log("Great to meet you" + name);
+      document.write("Great to meet you" + name);
+
+        }
+
+      meet();
+      </script>
+        <label id="lblName">The wizards first question, do you want to choose the left side of castle or the right?</label><br>
+        <input id="txtName" type="text"><br>
+        <button id="btnSubmit">Submit</button><br>
+
+        <script>
+          var currentText = document.getElementById("lblName").innerHTML;
+        </script>
+  </body>
+</html>
