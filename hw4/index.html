@@ -9,10 +9,10 @@
     </head>
   <body>
 
-      <script>
-      <h1><center>Time for a Quest</center></h1>
-      <h3><center>You are forced to save a Princess from a mad wizard in a castle. The only way to get to her is by unlocking doors. To get through each door you must have the correct answer to the wizards questions/riddles. Be ready to solve his riddles to save the Princess.</center></h3>
 
+      <h1><center>Time to a Quest</center></h1>
+      <h3><center>You are forced to save a Princess from a mad wizard in a castle. The only way to get to her is by unlocking doors. To get through each door you must have the correct answer to the wizards questions/riddles. Be ready to solve his riddles to save the Princess.</center></h3>
+      <script>
       function meet()
       {
       var name = window.prompt("Whats your name savior?");
@@ -21,13 +21,14 @@
 
         }
 
-      meet();
+
       </script>
         <label id="lblName">The wizards first question, do you want to choose the left side of castle or the right?</label><br>
         <input id="txtName" type="text"><br>
         <button id="btnSubmit">Submit</button><br>
 
         <script>
+          meet();
           var currentText = document.getElementById("lblName").innerHTML;
           window.alert(currentText);
           if (currentText === "left") {
@@ -36,7 +37,7 @@
           if (currentText === "right"){
             window.alert("How old is the Princess?");
           }
-          
+
         </script>
   </body>
 </html>
