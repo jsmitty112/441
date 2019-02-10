@@ -5,11 +5,16 @@
       <meta name="author" content="Jordan Smith">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Epic Adventure</title>
-
+      <style>
+        body{
+            background-color:aqua;
+        }
+        </style>
     </head>
+
   <body>
 
-
+      <img src = "castle.jpeg">
       <h1><center>Time to a Quest</center></h1>
       <h3><center>You are forced to save a Princess from a mad wizard in a castle. The only way to get to her is by unlocking doors. To get through each door you must have the correct answer to the wizards questions/riddles. Be ready to solve his riddles to save the Princess.</center></h3>
       <script>
@@ -31,13 +36,95 @@
           meet();
           var currentText = document.getElementById("lblName").innerHTML;
           window.alert(currentText);
-          if (currentText === "left") {
-            window.alert("How old is the Princess");
+          if currentText = "left" {
+            window.alert("You have found a compass to the main hall, one step closer to finding her");
           }
-          if (currentText === "right"){
-            window.alert("How old is the Princess?");
+          if currentText = "right" {
+            window.alert("You chose the dark path but find a candle to light the way to the main hall");
           }
 
+
         </script>
+        <p id = "P2">The wizards first question, do you want to choose the left side of castle or the right?</P>
+          <script>
+            document.getElementById("P2").style.color="blue";
+            </script>
+        <div>
+            <label id = "number2">The wizard smells you, You are now faced with the choice to go up the ladder or under the main hall?</label><br>
+            <input id="txtName" type="text" value= "ladder or hall?"><br>
+            <button id="btnSubmit">Submit
+              </div>
+
+        <script>
+
+                var answer= document.getElementById("number2").innerHTML;
+                window.alert(answer);
+
+                if answer = "ladder"{
+                  window.alert("The wizard grows angry as he cant find you, you hear singing coming from above and see a door with a lock. The lock has a riddle on it to unlock it");
+                }
+                else {
+                  window.alert("The wizard groes angry as he cant find you. You see a light coming from a door that has a riddle on it to unlock it.");
+
+                }
+
+                <div style="background-color:lightblue">
+                  </div>
+
+              </script>
+              <label id = "number3">Speak friend and enter</label><br>
+              <input id="txtName" type="text" value= "Speak.."><br>
+              <button id="btnSubmit">Submit
+
+                <script>
+                  var speaker = document.getElementById("number3").innerHTML;
+                  window.alert(speaker);
+
+                  if speaker = "friend"{
+                    window.alert("The door is now open. You search the area for clues and find a map containg the top of castle where the Princess stays");
+
+                  }
+                  else {
+                    window.alert("Sorry try again");
+                  }
+                  </script>
+                  <label id = "number4">Time is running out. The wizard sends out his protecters to find you before you save the princess. You make it to the upper hall and find a key and two unlocked doors only to find you can only choose one door. Door one or door two? </label><br>
+                  <input id="txtName" type="text" value= "one or two"><br>
+                  <button id="btnSubmit">Submit
+                    <div style="background-color:blue">
+                      </div>
+                    <script>
+                      var door = document.getElementById("number4").innerHTML;
+                      window.alert(door);
+
+                      if door = "one"{
+                        window.alert("Door one leads to the basement of the princess tower, You defeat two protectors that tried to stop you. You take a key off a protector and find a locked door.");
+
+                      }
+                      else
+                      {
+                        window.alert("Door two leads to the wiards room. He captures you and enslaves you in the dungeon.")
+                      }
+
+                      </script>
+                      <label id = "number5">This door leads ot the Princess. The color of her hair is what? </label><br>
+                      <input id="txtName" type="text" value= "color?"><br>
+                      <button id="btnSubmit">Submit
+                        <script>
+                          var open= document.getElementById("number5").innerHTML;
+                          window.alert(open);
+
+                          if open = "red"{
+                            window.alert("You find the princess in her room and eescape alive and well. You win!")
+                          }
+                          else{
+                            document.write("Guess again")
+                          }
+
+
+                          </script>
+                          <img src= "princess.png">
+
+
   </body>
 </html>
