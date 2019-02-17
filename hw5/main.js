@@ -29,7 +29,6 @@ function creatRandomImageArray(){
         }
     }
   }
-  function flipImg(number){
+  function flipImage(number){
     document.getElementById(actualImagePath[number]).src= imgActual[number];
   }
-  
