@@ -1,0 +1,111 @@
+html {
+    background-color: ;aqua
+    font-family: 'Roboto', sans-serif;
+}
+
+.topHeading {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+.celebPic {
+
+    text-align: center;
+    background: #005A5B;
+    padding: 30px;
+    margin: -9px;
+    border: 0;
+    height: 300px;
+}
+.celebSide {
+    display: inline-block;
+    padding: 15px;
+    vertical-align: middle;
+
+}
+
+.celebSideFar {
+    display: inline-block;
+    padding: 20px;
+    vertical-align: middle;
+
+}
+
+.celebCenter {
+    display: inline-block;
+    vertical-align: middle;
+}
+hr.style {
+    border: 0;
+    height: 2px;
+}
+#title {
+    font-size: 50px;
+    text-align: center;
+    font-family: , Sans-serif;
+    color: yellow;
+}
+#description {
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#celebOutL, #celebOutL1 {
+    position: absolute;
+    left: 90px;
+    top: 300px;
+    opacity: 0.4;
+}
+
+#celebOutR, #celebOutR1 {
+    position: absolute;
+    left: 1200px;
+    top: 400px;
+    opacity: 0.2;
+}
+
+#celebR, #celebR1 {
+    position: absolute;
+    left: 280px;
+    top: 350px;
+    opacity: 0.7;
+}
+
+#celebL, #celebL1 {
+    position: absolute;
+    left: 720px;
+    top: 250px;
+    opacity: 0.7;
+}
+
+#celebCenter, #celebCenter1 {
+    position: absolute;
+    left: 560px;
+    top: 270px;
+}
+button {
+    background-color: #005A5B;
+    border: none;
+    color: red;
+    padding: 35px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 2px;
+    cursor: pointer;
+  }
+
+.button {
+    text-align: center;
+}
+
+.answer5, .answer4, .answer3, .answer2, .answer1  {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
